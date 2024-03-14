@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SystemInfo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" MinHeight="450" Height="450" MinWidth="540" Width="540">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="355*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="103*"/>
+            <ColumnDefinition Width="32*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="InfoBtn" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Height="59" Width="108" Click="Button_Click">
+            <TextBlock Text="Информация о комплектующих" TextWrapping="Wrap" TextAlignment="Center"/>
+        </Button>
+
     </Grid>
 </Window>

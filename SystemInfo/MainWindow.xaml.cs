@@ -24,5 +24,10 @@ namespace SystemInfo
         {
             InitializeComponent();
         }
+
+        private void InfoBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
